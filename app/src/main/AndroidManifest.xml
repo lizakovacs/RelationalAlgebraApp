@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lizakovacs.relationalalgebra">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Relational Algebra"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Welcome_mainactivity"
+            android:label="Relational Algebra">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Home"
+            android:label="Home" />
+        <activity
+            android:name=".Theory"
+            android:label="Theory" />
+        <activity
+            android:name=".Summary"
+            android:label="Summary" />
+        <activity
+            android:name=".Quiz"
+            android:label="Quiz" />
+        <activity
+            android:name=".Videos"
+            android:label="Videos" />
+        <activity
+            android:name=".NewSelect"
+            android:label="Operation" />
+        <activity
+            android:name=".NewProject"
+            android:label="Operation" />
+        <activity
+            android:name=".NewUnion"
+            android:label="Operation" />
+        <activity
+            android:name=".NewSetDifference"
+            android:label="Operation" />
+        <activity
+            android:name=".NewIntersection"
+            android:label="Operation" />
+        <activity
+            android:name=".NewProduct"
+            android:label="Operation" />
+        <activity
+            android:name=".NewJoin"
+            android:label="Operation" />
+
+        <activity android:name=".ResultsQuiz"
+            android:label="Quiz"></activity>
+    </application>
+
+</manifest>

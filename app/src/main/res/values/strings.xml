@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Relational Algebra</string>
+    <string name="title_home">Home</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_theory">Theory</string>
+    <string name="title_activity_summary">Summary</string>
+    <string name="relational_algebra">Relational Algebra</string>
+
+    <string name="quiz">Quiz</string>
+    <string name="summary">Summary</string>
+    <string name="theory">Theory</string>
+    <string name="videos">Videos</string>
+    <string name="relational_algebrahome">Relational Algebra</string>
+
+    <string name="article_title">Relational Algebra</string>
+    <string name="article_subtitle">Introduction</string>
+    <string name="relational_algebra1">Relational Algebra</string>
+    <string name="introduction">Introduction</string>
+    <string name="content"><b>What is relational algebra?</b>
+        \n\n
+
+        Relational algebra is a procedural query language,
+        which takes instances of relations as input and yields instances of relations
+        as output. It uses operators to perform queries. An operator can be either unary or binary.
+        They accept relations as their input and yield relations as their output.
+        Relational algebra is performed recursively on a relation and intermediate results are also considered relations.
+            For more info see https://www.tutorialspoint.com/dbms/relational_algebra.htm.
+\n\n
+        <b>The 5 basic operations of relational algebra are as follows:</b>
+\n\n
+<ul>
+    <li>Select</li>
+    \n\n
+    <li>Project</li>
+    \n\n
+    <li>Union</li>
+    \n\n
+    <li>Set Difference</li>
+    \n\n
+    <li>Cartesian Product</li>
+</ul>
+        \n\n
+        <p>These operations perform most of the data retrieval operations needed.
+            There are also <b>Join</b>, <b>Intersection</b> and <b>Division</b> operations,
+            which can be expressed in terms of the five basic operations.
+            \n\n
+            Operations are explained in more detail with examples in the next few pages.
+        </p>
+    </string>
+
+    <string name="home">Home</string>
+    <string name="next">Next</string>
+
+    <string name="selection">Operation - Selection (or Restriction)</string>
+    <string name="selectiondes">Works on a single relation R and defines a relation that contains only those tuples (rows) of R that satisfy the specified condition (predicate)</string>
+    <string name="selectionexmpl"><b>Symbol:</b> σ </string>
+    <string name="name_sigma"><b>Name:</b> Sigma</string>
+    <string name="example_select"><b>Example:</b> List all students with a WAM greater than 74.
+</string>
+
+
+    <string name="projectexample"><b>Example: </b>Produce a list of WAM’s for all students, showing only fName, lName and WAM.
+</string>
+    <string name="projectname"><b>Name: </b>Pi</string>
+    <string name="project_des">Works on a single relation R and defines a relation that contains a vertical subset of R, extracting the values of specified attributes and eliminating duplicates
+</string>
+    <string name="projectsymbol"><b>Symbol: </b>Π</string>
+    <string name="projection">Operation - Projection</string>
+
+
+    <string name="unionsymbol"><b>Symbol: </b>∪</string>
+    <string name="uniondes">Union of two relations R and S defines a relation that contains all the tuples of R, or S, or both R and S, duplicate tuples being eliminated</string>
+    <string name="unionname"><b>Name:</b> Union</string>
+    <string name="unionexample"><b>Example:</b> List the authors who have either published a book and an article or both.</string>
+    <string name="union">Operation - Union</string>
+
+    <string name="setdifference">Operation - Set Difference</string>
+    <string name="setdifferencedes">Defines a relation consisting of tuples that are in relation R, but not in S</string>
+    <string name="setdifferencesymbol"><b>Symbol: </b>-</string>
+    <string name="setdifferencename"><b>Name: </b>Minus</string>
+    <string name="setdifferenceexample"><b>Example: </b>List all the lecture rooms where there are scheduled lectures and no scheduled tutorials</string>
+
+    <string name="intersection">Operation - Intersection</string>
+    <string name="intersectiondes">Defines a relation consisting of the set of tuples that are in both R and S</string>
+    <string name="intersectionsymbol"><b>Symbol: </b>∩</string>
+    <string name="intersectionname"><b>Name: </b>Intersection</string>
+    <string name="intersectionexample"><b>Example: </b>List the studentIDs of all the students that are students AND tutors of at least one subject</string>
+
+    <string name="product">Operation - Cartesian Product</string>
+    <string name="productsymbol"><b>Symbol: </b>×</string>
+    <string name="productname"><b>Name: </b>Product</string>
+    <string name="productexample"><b>Example: </b>List the zids, dormNo and comments of students that have viewed a dorm room at UniLodge</string>
+    <string name="productdes">Defines a relation that is the concatenation of every tuple of relation R with every tuple of relation S</string>
+
+    <string name="join">Operation - Join</string>
+    <string name="joindes">Join is a derivative of Cartesian product. Equivalent to performing a Selection, using join predicate as selection formula, over Cartesian Product of the two operand relations. There are a number of join operations, which are listed below.</string>
+    <string name="thetades"><b>Theta join</b> defines a relation that contains tuples satisfying the predicate F from the Cartesian Product of R and S. The predicate F is of the form R.a (&gt;, &lt;, \u2265, \u2264, =, \u2260) S.b. For example:
+relationA.field1 &gt; relationB.field1. <b>Equi join</b> is the same as a theta join however, uses just the equality (=) operator. For example: relationA.field1 = relationB.field1. <b>Natural Join</b> is also a form of an equi join of the two relations R and S over all common attributes x. One occurence of each common attribute is eliminated from the result.
+</string>
+    <string name="thetasymbol"><b>Symbol: </b>⋈</string>
+    <string name="thetaname"><b>Name: </b>Join or Bowtie</string>
+    <string name="thetaexample"><b>Theta/Equi Join Example: </b>List the zids, dormNo and comments of students that have viewed a dorm room at UniLodge.</string>
+
+    <string name="naturalexample"><b>Natural Join Example: </b>List the zids, dormNo and comments of students that have viewed a dorm room at UniLodge.</string>
+    <string name="outerjoindes">Outer joins display rows in the result that do not have matching values in the join column.
+        There are three general types of outer joins: \n\n
+        <ul>
+    <li><b>Left Outer Join</b></li>
+    \n\n
+            <li><b>Right Outer Join</b></li>
+    \n\n
+    <li><b>Full Outer Join</b></li>
+
+</ul></string>
+    <string name="outerjoinsymbol"><b>Symbol: </b>⟗</string>
+    <string name="outerjoinname"><b>Name: </b>Full Outer Join</string>
+    <string name="outerjoinexample"><b>Example:</b>List all the students ids, street and city who might have a dorm room with Uni Lodge</string>
+    <string name="leftouterjoinsymbol"><b>Symbol: </b>⟕</string>
+    <string name="leftouterjoinname"><b>Name: </b>Left Outer Join</string>
+    <string name="rightouterjoinsymbol"><b>Symbol: </b>⟖</string>
+    <string name="rightouterjoinname"><b>Name: </b>Right Outer Join</string>
+
+</resources>
